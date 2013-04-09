@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Git vs TFS</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -50,7 +50,8 @@
             			<h2>GIT</h2>
 						<div>
 						    <ul>
-						        <li style="text-align: justify;">Distributed Version Control System<br><br></li>						        
+						        <li style="text-align: justify;">Distributed Version Control System<br><br></li>	
+						        <li style="text-align: justify;">It's FREE!<br><br></li>						        
 						        <li style="text-align: justify;">All check-ins, branching, merging all local, there is no need to be online.<br><br></li>
 						        <li style="text-align: justify;">Branching &amp; Merging much simpler<br><br></li>
 						        <li style="text-align: justify;">Once online can sync with remote repository<br><br></li>
@@ -89,19 +90,78 @@
 						</div>
 					</section>
 
+					<section>
+                    	<h2>GIT</h2>
+						<div>
+						    <ul>
+						    	<li>Allows for easy patches eg./release goes out, start adding new features, hot fix required but can't release the un-tested features, you can have the release tagged, branch from that point and add the hot fix and release that and also merge that hot fix branch with master to ensure its applied to the next version<br><br></li>
+						    	<li>Small disk space requirements<br><br></li>
+						    	<li>Multi platform. Windows, OSX, Linux<br><br></li>
+								<li>Stashing - can stash changes before committing, change branches make modifications, commit, switch branch and un-stash without effecting commit history</li>    
+						    </ul>
+						</div>
+					</section>
+
+					<section>
+                    	<h2>GIT</h2>
+						<div>
+						    <ul>
+						    	<li>It can be used in command line or GUI just like TFS<br><br></li>
+						    	<li>Visual Studio Git Plugin, SourceTree, Github for Windows, TortoiseGit<br><br></li>  
+						    </ul>
+						</div>
+					</section>
+
                     <section>
                         <h2>TFS</h2>
                         <div>
                             <img src="http://i.imm.io/121Y6.jpeg">
                             <br>
-                        </div>
-                        <div>Central</div>
-                        <div>Slow - wait for build to check in</div>
-                        <div>Licence Fees</div>
-                        <div>Takes 6 attempts to check things in</div>
-                        <div>Throws wobblies on who has what file</div>
-                        <div>Read only files</div>
-                        <div>Worse than Source Safe, Subversion, Sourcegear in my experience</div>
+                            <ul>
+                            	<li>Centralised - have to connect to remote server to view history and do check-ins<br><br></li>
+                            	<li>Slow - wait for build to check in rather than something like Team City that can notify you if build fails<br><br></li>
+		                        <li>Licence Fees<br><br></li>
+                            </ul>
+                        </div>                      
+                    </section>
+
+                    <section>
+                        <h2>TFS</h2>
+                        <div>
+                            <img src="http://i.imm.io/121Y6.jpeg">
+                            <br>
+                            <ul>
+		                        <li>Takes 6 attempts to check things in<br><br></li>
+		                        <li>Throws wobblies on who has what file<br><br></li>
+		                        <li>Makes files read only<br><br></li>
+		                        <li>Worse than Source Safe, Subversion, Sourcegear in my experience</li>
+                            </ul>
+                        </div>                      
+                    </section>
+
+                    <section>
+                        <h2>DEMO</h2>
+                        <div>
+                            <img src="http://i.minus.com/i3nPmdfBC2VaH.gif">
+                            <br>
+                            <ul>
+		                        <li>Benn setup Gitlab at <a href="http://192.168.100.144">http://192.168.100.144</a> and can browse the code and see what was changed in each commit<br><br></li>
+		                        <li>Look at new project to get url to it<br><br></li>
+		                        <li>Setup a new project in Visual Studio, initialize a git repository, add .gitignore file, add remote, add all files, commit, push<br><br></li>
+                            </ul>
+                        </div>                      
+                    </section>
+
+                    <section>
+                        <h2>DEMO</h2>
+                        <div>
+                            <img src="http://i.minus.com/i3nPmdfBC2VaH.gif">
+                            <br>
+                            <ul>
+		                        <li>Create new branch and make some changes and push, setup Merge Request, view changes and merge<br><br></li>
+		                        <li>Delete branch when happy</li>
+                            </ul>
+                        </div>                      
                     </section>
 
 			</div>
